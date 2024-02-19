@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-
+deploymentName: mypro
 image:
   repository: "944372342612.dkr.ecr.us-west-2.amazonaws.com/myimage"
   pullPolicy: Always

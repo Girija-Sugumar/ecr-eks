@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "mypro.fullname" . }}
+  #name: {{ include "mypro.fullname" . }}
+  name: {{ .Values.deploymentName }}
   labels:
     {{- include "mypro.labels" . | nindent 4 }}
 spec:
