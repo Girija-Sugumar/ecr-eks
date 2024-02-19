@@ -3,13 +3,13 @@ const app = express()
 const port = 4050
 
 app.get('/', (req, res) => {
-  res.send('added new role')
+  res.send('test1')
 })
 app.get('/ecr', (req, res) => {
-    res.send('new Image uploaded')
+    res.send('test image')
 })
 app.get('/eks', (req, res) => {
-    res.send('new changes deployed in Website')
+    res.send('test deploy')
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
