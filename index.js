@@ -3,13 +3,13 @@ const app = express()
 const port = 4050
 
 app.get('/', (req, res) => {
-  res.send('test1')
+  res.send('shinchan')
 })
 app.get('/ecr', (req, res) => {
-    res.send('test image')
+    res.send('doremon')
 })
 app.get('/eks', (req, res) => {
-    res.send('test deploy')
+    res.send('jackiechan')
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
