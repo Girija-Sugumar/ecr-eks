@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - '*'
+      - main
 
 jobs:
   build-and-deploy:
@@ -33,4 +33,4 @@ jobs:
     - name: Deploy to EKS
       run: |
         aws eks --region us-west-2 update-kubeconfig --name ecrtest
-        kubectl rollout restart deployment mypro -n default
+        kubectl rollout restart deployment mypro
