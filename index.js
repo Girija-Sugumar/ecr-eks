@@ -3,7 +3,7 @@ const app = express()
 const port = 4050
 
 app.get('/', (req, res) => {
-  res.send('pipeline testing')
+  res.send('testing testing')
 })
 app.get('/ecr', (req, res) => {
     res.send('new Image uploaded')
